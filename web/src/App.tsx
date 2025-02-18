@@ -7,9 +7,8 @@ import FatalErrorPage from 'src/pages/FatalErrorPage'
 
 import { AuthProvider, useAuth } from './auth'
 
-import './index.css'
 import './scaffold.css'
-
+import './index.css'
 
 interface AppProps {
   children?: ReactNode
@@ -19,7 +18,9 @@ const App = ({ children }: AppProps) => (
   <FatalErrorBoundary page={FatalErrorPage}>
     <RedwoodProvider titleTemplate="%PageTitle | %AppTitle">
       <AuthProvider>
-        <RedwoodApolloProvider useAuth={useAuth}>{children}</RedwoodApolloProvider>
+        <RedwoodApolloProvider useAuth={useAuth}>
+          {children}
+        </RedwoodApolloProvider>
       </AuthProvider>
     </RedwoodProvider>
   </FatalErrorBoundary>

@@ -34,10 +34,10 @@ export const Success = ({
   articles,
 }: CellSuccessProps<ArticlesQuery, ArticlesQueryVariables>) => {
   return (
-    <>
+    <div className="space-y-10">
       {articles.map((article) => (
-        <Article key={article.id} article={article} />
+        <Article article={article} key={article.id} />
       ))}
-    </>
+    </div>
   )
 }
