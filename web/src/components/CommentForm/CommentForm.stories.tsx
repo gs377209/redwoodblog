@@ -43,6 +43,7 @@ export const Primary: Story = {
               name: variables.input.name,
               body: variables.input.body,
               createdAt: new Date().toISOString(),
+              postId: 1,
             },
           }
         }),

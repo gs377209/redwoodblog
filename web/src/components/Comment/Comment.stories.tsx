@@ -11,6 +11,10 @@
 // See https://storybook.js.org/docs/7/writing-stories/args
 
 import type { Meta, StoryObj } from '@storybook/react'
+import {
+  DeleteCommentMutation,
+  DeleteCommentMutationVariables,
+} from 'types/graphql'
 
 import Comment from './Comment'
 
@@ -36,6 +40,25 @@ export const Primary: Story = {
 }
 
 export const Moderator: Story = {
+  parameters: {
+    msw: {
+      handlers: [
+        mockGraphQLMutation<
+          DeleteCommentMutation,
+          DeleteCommentMutationVariables
+        >('DeleteCommentMutation', (_variables, { ctx }) => {
+          const id = Math.floor(Math.random() * 1000)
+          ctx.delay(1000)
+          return {
+            deleteComment: {
+              id,
+              postId: 1,
+            },
+          }
+        }),
+      ],
+    },
+  },
   decorators: [
     (Story) => {
       mockCurrentUser({

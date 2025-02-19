@@ -57,8 +57,10 @@ export const Success = ({ post }: CellSuccessProps<EditPostById>) => {
     },
   })
 
-  const onSave = (input: UpdatePostInput, id: EditPostById['post']['id']) => {
-    updatePost({ variables: { id, input } })
+  const onSave = (input: UpdatePostInput, id?: number) => {
+    if (id) {
+      updatePost({ variables: { id, input } })
+    }
   }
 
   return (

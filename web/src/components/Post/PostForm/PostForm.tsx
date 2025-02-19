@@ -14,8 +14,8 @@ type FormPost = NonNullable<EditPostById['post']>
 
 interface PostFormProps {
   post?: EditPostById['post']
-  onSave: (data: UpdatePostInput, id?: FormPost['id']) => void
-  error: RWGqlError
+  onSave: (input: UpdatePostInput, id?: FormPost['id']) => void
+  error: RWGqlError | undefined
   loading: boolean
 }
 

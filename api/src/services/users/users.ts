@@ -6,14 +6,16 @@ export const users: QueryResolvers['users'] = () => {
   return db.user.findMany()
 }
 
-export const user: QueryResolvers['user'] = ({ id }) => {
-  return db.user.findUnique({
-    where: { id },
-  })
-}
-
 export const User: UserRelationResolvers = {
-  posts: (_obj, { root }) => {
-    return db.user.findUnique({ where: { id: root?.id } }).posts()
+  posts: async (_obj, { root }) => {
+    const maybePosts = await db.user
+      .findUnique({ where: { id: root?.id } })
+      .posts()
+
+    if (!maybePosts) {
+      throw new Error('Could not resolve author')
+    }
+
+    return maybePosts
   },
 }

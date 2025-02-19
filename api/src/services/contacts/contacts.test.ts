@@ -1,5 +1,3 @@
-import type { Contact } from '@prisma/client'
-
 import { contacts, contact, createContact } from './contacts'
 import type { StandardScenario } from './contacts.scenarios'
 

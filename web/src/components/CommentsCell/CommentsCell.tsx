@@ -30,7 +30,7 @@ export const Empty = () => {
 export const Failure = ({
   error,
 }: CellFailureProps<CommentsQueryVariables>) => (
-  <div style={{ color: 'red' }}>Error: {error?.message}</div>
+  <div className="text-red-600">Error: {error?.message}</div>
 )
 
 export const Success = ({

@@ -56,7 +56,9 @@ describe('truncate', () => {
     // @ts-expect-error - Testing JS scenario
     expect(truncate(false)).toEqual('false')
 
+    // @ts-expect-error - Testing JS scenario
     expect(truncate(undefined)).toEqual('')
+    // @ts-expect-error - Testing JS scenario
     expect(truncate(null)).toEqual('')
   })
 })

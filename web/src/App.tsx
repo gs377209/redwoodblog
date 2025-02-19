@@ -15,6 +15,7 @@ interface AppProps {
 }
 
 const App = ({ children }: AppProps) => (
+  // @ts-expect-error seems to be a mismatch on error types
   <FatalErrorBoundary page={FatalErrorPage}>
     <RedwoodProvider titleTemplate="%PageTitle | %AppTitle">
       <AuthProvider>

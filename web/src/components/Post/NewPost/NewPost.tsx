@@ -1,7 +1,8 @@
 import type {
-  CreatePostMutation,
   CreatePostInput,
+  CreatePostMutation,
   CreatePostMutationVariables,
+  UpdatePostInput,
 } from 'types/graphql'
 
 import { navigate, routes } from '@redwoodjs/router'
@@ -33,8 +34,9 @@ const NewPost = () => {
     },
   })
 
-  const onSave = (input: CreatePostInput) => {
-    createPost({ variables: { input } })
+  const onSave = (input: UpdatePostInput) => {
+    const updatedInput = input as unknown as CreatePostInput
+    createPost({ variables: { input: updatedInput } })
   }
 
   return (

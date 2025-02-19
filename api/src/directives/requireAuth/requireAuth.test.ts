@@ -13,7 +13,7 @@ describe('requireAuth directive', () => {
     // mockRedwoodDirective(requireAuth, { context: { currentUser: { id: 1, name: 'Lebron McGretzky' } }})
     const mockExecution = mockRedwoodDirective(requireAuth, {
       context: {
-        currentUser: { id: 1, email: 'asd@asd.asd' },
+        currentUser: { id: 1, email: 'asd@asd.asd', roles: 'moderator' },
       },
     })
 

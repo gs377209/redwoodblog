@@ -14,7 +14,7 @@ describe('comments', () => {
         where: { id: scenario.comment.jane.postId },
         include: { comments: true },
       })
-      expect(result.length).toEqual(post.comments.length)
+      expect(result.length).toEqual(post?.comments.length)
     }
   )
 
@@ -72,6 +72,7 @@ describe('comments', () => {
   scenario(
     'does not allow a logged out user to delete a comment',
     async (scenario: StandardScenario) => {
+      // @ts-expect-error the api generated type is messed up
       mockCurrentUser(null)
 
       expect(() =>

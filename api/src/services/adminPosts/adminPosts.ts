@@ -1,8 +1,11 @@
+import { MutationResolvers, QueryResolvers } from 'types/graphql'
+
+import { removeNulls } from '@redwoodjs/api'
 import { ForbiddenError } from '@redwoodjs/graphql-server'
 
 import { db } from 'src/lib/db'
 
-const verifyOwnership = async ({ id }) => {
+const verifyOwnership = async ({ id }: { id: number }) => {
   if (await adminPost({ id })) {
     return true
   } else {
@@ -10,32 +13,38 @@ const verifyOwnership = async ({ id }) => {
   }
 }
 
-export const adminPosts = () => {
-  return db.post.findMany({ where: { userId: context.currentUser.id } })
+export const adminPosts: QueryResolvers['adminPosts'] = () => {
+  return db.post.findMany({ where: { userId: context.currentUser?.id ?? 0 } })
 }
 
-export const adminPost = ({ id }) => {
+export const adminPost: QueryResolvers['adminPost'] = ({ id }) => {
   return db.post.findFirst({
-    where: { id, userId: context.currentUser.id },
+    where: { id, userId: context.currentUser?.id ?? 0 },
   })
 }
 
-export const createPost = ({ input }) => {
+export const createPost: MutationResolvers['createPost'] = ({ input }) => {
   return db.post.create({
-    data: { ...input, userId: context.currentUser.id },
+    data: {
+      ...input,
+      userId: context.currentUser?.id ?? 0,
+    },
   })
 }
 
-export const updatePost = async ({ id, input }) => {
+export const updatePost: MutationResolvers['updatePost'] = async ({
+  id,
+  input,
+}) => {
   await verifyOwnership({ id })
 
   return db.post.update({
-    data: input,
+    data: removeNulls(input),
     where: { id },
   })
 }
 
-export const deletePost = async ({ id }) => {
+export const deletePost: MutationResolvers['deletePost'] = async ({ id }) => {
   await verifyOwnership({ id })
 
   return db.post.delete({

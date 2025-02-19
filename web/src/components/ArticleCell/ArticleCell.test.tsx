@@ -18,13 +18,13 @@ describe('ArticleCell', () => {
 
   test('Failure renders successfully', async () => {
     expect(() => {
-      render(<Failure error={new Error('Oh no')} />)
+      render(<Failure error={new Error('Oh no')} id={1} />)
     }).not.toThrow()
   })
 
   test('Success renders successfully', async () => {
     const article = standard().article
-    render(<Success article={article} />)
+    render(<Success article={article} id={1} />)
 
     expect(screen.getByText(article.title)).toBeInTheDocument()
     expect(screen.getByText(article.body)).toBeInTheDocument()

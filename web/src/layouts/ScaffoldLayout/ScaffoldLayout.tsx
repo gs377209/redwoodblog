@@ -3,9 +3,9 @@ import { Toaster } from '@redwoodjs/web/toast'
 
 type LayoutProps = {
   title: string
-  titleTo: keyof typeof routes
+  titleTo: string
   buttonLabel: string
-  buttonTo: keyof typeof routes
+  buttonTo: string
   children: React.ReactNode
 }
 
@@ -21,11 +21,17 @@ const ScaffoldLayout = ({
       <Toaster toastOptions={{ className: 'rw-toast', duration: 6000 }} />
       <header className="rw-header">
         <h1 className="rw-heading rw-heading-primary">
-          <Link to={routes[titleTo]()} className="rw-link">
+          <Link
+            to={routes[titleTo as keyof typeof routes]()}
+            className="rw-link"
+          >
             {title}
           </Link>
         </h1>
-        <Link to={routes[buttonTo]()} className="rw-button rw-button-green">
+        <Link
+          to={routes[buttonTo as keyof typeof routes]()}
+          className="rw-button rw-button-green"
+        >
           <div className="rw-button-icon">+</div> {buttonLabel}
         </Link>
       </header>
