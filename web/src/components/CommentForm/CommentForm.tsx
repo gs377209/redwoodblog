@@ -66,7 +66,7 @@ const CommentForm = ({ postId }: Props) => {
         </Label>
         <TextField
           name="name"
-          className="block w-full rounded border p-1 text-sm "
+          className="block w-full rounded border p-1 text-sm"
           validation={{ required: true }}
         />
 
