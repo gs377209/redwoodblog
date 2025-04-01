@@ -5466,15 +5466,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@redwoodjs/auth-dbauth-api@npm:8.5.0":
-  version: 8.5.0
-  resolution: "@redwoodjs/auth-dbauth-api@npm:8.5.0"
+"@redwoodjs/auth-dbauth-api@npm:8.6.0":
+  version: 8.6.0
+  resolution: "@redwoodjs/auth-dbauth-api@npm:8.6.0"
   dependencies:
-    "@redwoodjs/project-config": "npm:8.5.0"
+    "@redwoodjs/project-config": "npm:8.6.0"
     base64url: "npm:3.0.1"
     md5: "npm:2.3.0"
     uuid: "npm:10.0.0"
-  checksum: 10c0/18faf090b277c1ea255389dce50ff57631cbc7d5b198c082956899796d34e9d7b3380360e75b09a5f0e6dc02ae1aad586b25bcdbc79f95fe489ab8eadefbdd1f
+  checksum: 10c0/d5f3e19394a052cf9e91a98876e4b4542d7e772e24723cbbbd969623c7e2ad6fea7c4b8e4a43246c640d8ba312a19ae03fdfdf71b7822354eba674ca66c03922
   languageName: node
   linkType: hard
 
@@ -5886,6 +5886,18 @@ __metadata:
     smol-toml: "npm:1.3.1"
     string-env-interpolation: "npm:1.0.1"
   checksum: 10c0/ed631e1ab7319a7065609c7b318bed35db9a6f3472147855953b480e97c31f108e4f5c1a75db01374e4d4f34a8db0f8a3fb7c3f121e73a8d7a19caaf1f286c26
+  languageName: node
+  linkType: hard
+
+"@redwoodjs/project-config@npm:8.6.0":
+  version: 8.6.0
+  resolution: "@redwoodjs/project-config@npm:8.6.0"
+  dependencies:
+    deepmerge: "npm:4.3.1"
+    fast-glob: "npm:3.3.2"
+    smol-toml: "npm:1.3.1"
+    string-env-interpolation: "npm:1.0.1"
+  checksum: 10c0/549b1893891a8ec77a5ccd00ae40c6cededb2758447d37de599bf445acf0f3fdffc74424e94d1ecc1be605f5b97995f8569e98179afd8b7df893cbac0145082b
   languageName: node
   linkType: hard
 
@@ -8662,7 +8674,7 @@ __metadata:
   resolution: "api@workspace:api"
   dependencies:
     "@redwoodjs/api": "npm:8.5.0"
-    "@redwoodjs/auth-dbauth-api": "npm:8.5.0"
+    "@redwoodjs/auth-dbauth-api": "npm:8.6.0"
     "@redwoodjs/graphql-server": "npm:8.5.0"
   languageName: unknown
   linkType: soft
