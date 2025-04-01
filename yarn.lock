@@ -1646,6 +1646,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime-corejs3@npm:7.26.10":
+  version: 7.26.10
+  resolution: "@babel/runtime-corejs3@npm:7.26.10"
+  dependencies:
+    core-js-pure: "npm:^3.30.2"
+    regenerator-runtime: "npm:^0.14.0"
+  checksum: 10c0/897b61d84809d6e63e08566d436cd08a3a78f218283641bb53533948d4bcd5524c6a1f83613e20485cf7fa8d054da20dd9039d17e06c92cf282f25d4d4f57250
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.8.4":
   version: 7.26.9
   resolution: "@babel/runtime@npm:7.26.9"
@@ -5466,6 +5476,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@redwoodjs/api@npm:8.6.0":
+  version: 8.6.0
+  resolution: "@redwoodjs/api@npm:8.6.0"
+  dependencies:
+    "@prisma/client": "npm:5.20.0"
+    "@whatwg-node/fetch": "npm:0.9.21"
+    cookie: "npm:0.7.2"
+    humanize-string: "npm:2.1.0"
+    jsonwebtoken: "npm:9.0.2"
+    pascalcase: "npm:1.0.0"
+    pino: "npm:9.4.0"
+    title-case: "npm:3.0.3"
+  peerDependencies:
+    memjs: 1.3.2
+    redis: 4.7.0
+  peerDependenciesMeta:
+    memjs:
+      optional: true
+    redis:
+      optional: true
+  bin:
+    redwood: ./dist/bins/redwood.js
+    rw: ./dist/bins/redwood.js
+    rwfw: ./dist/bins/rwfw.js
+    tsc: ./dist/bins/tsc.js
+  checksum: 10c0/b032eecca89f8bfe0e5de0e074e6e0ca5a8ee021e8b8180b3d711c79fcbcf31319998b7c854cafae325091ee5fd5843bf74b5db05b509374bc591ec665a62320
+  languageName: node
+  linkType: hard
+
 "@redwoodjs/auth-dbauth-api@npm:8.5.0":
   version: 8.5.0
   resolution: "@redwoodjs/auth-dbauth-api@npm:8.5.0"
@@ -5662,6 +5701,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@redwoodjs/context@npm:8.6.0":
+  version: 8.6.0
+  resolution: "@redwoodjs/context@npm:8.6.0"
+  checksum: 10c0/a29aa4ca7809d61bb85d0bfb529a6c6ef72dc890cc6cb9e085691108d91821151f33f87229dabf17f8638d0148d1f162ea9051d369eb8b0dcace4a819ff32b34
+  languageName: node
+  linkType: hard
+
 "@redwoodjs/cookie-jar@npm:8.5.0":
   version: 8.5.0
   resolution: "@redwoodjs/cookie-jar@npm:8.5.0"
@@ -5803,6 +5849,35 @@ __metadata:
     lodash: "npm:4.17.21"
     uuid: "npm:10.0.0"
   checksum: 10c0/30ac8810b5b452a3a8906a6cd4e639a74bc99afe66cf17a034b48b7d9de51d04be8301ce18c97bb6d891a0b8a218cc6f0df873bc77d89a5cfb0237c96c28efe8
+  languageName: node
+  linkType: hard
+
+"@redwoodjs/graphql-server@npm:8.6.0":
+  version: 8.6.0
+  resolution: "@redwoodjs/graphql-server@npm:8.6.0"
+  dependencies:
+    "@babel/runtime-corejs3": "npm:7.26.10"
+    "@envelop/core": "npm:5.0.2"
+    "@envelop/depth-limit": "npm:4.0.0"
+    "@envelop/disable-introspection": "npm:6.0.0"
+    "@envelop/filter-operation-type": "npm:6.0.0"
+    "@envelop/on-resolve": "npm:4.1.1"
+    "@escape.tech/graphql-armor": "npm:3.0.1"
+    "@graphql-tools/merge": "npm:9.0.7"
+    "@graphql-tools/schema": "npm:10.0.6"
+    "@graphql-tools/utils": "npm:10.5.4"
+    "@graphql-yoga/plugin-persisted-operations": "npm:3.7.0"
+    "@opentelemetry/api": "npm:1.8.0"
+    "@redwoodjs/api": "npm:8.6.0"
+    "@redwoodjs/context": "npm:8.6.0"
+    core-js: "npm:3.38.1"
+    graphql: "npm:16.9.0"
+    graphql-scalars: "npm:1.23.0"
+    graphql-tag: "npm:2.12.6"
+    graphql-yoga: "npm:5.7.0"
+    lodash: "npm:4.17.21"
+    uuid: "npm:10.0.0"
+  checksum: 10c0/760cda23b3df48443e81f2316c0d5a99bf9a323f98d1cec581d6889ca11720609b03eadd85efe83c4e8a16959b34814384ba2dc0b9f0f3ff806b23d126b14f8a
   languageName: node
   linkType: hard
 
@@ -8663,7 +8738,7 @@ __metadata:
   dependencies:
     "@redwoodjs/api": "npm:8.5.0"
     "@redwoodjs/auth-dbauth-api": "npm:8.5.0"
-    "@redwoodjs/graphql-server": "npm:8.5.0"
+    "@redwoodjs/graphql-server": "npm:8.6.0"
   languageName: unknown
   linkType: soft
 
