@@ -1646,6 +1646,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime-corejs3@npm:7.26.10":
+  version: 7.26.10
+  resolution: "@babel/runtime-corejs3@npm:7.26.10"
+  dependencies:
+    core-js-pure: "npm:^3.30.2"
+    regenerator-runtime: "npm:^0.14.0"
+  checksum: 10c0/897b61d84809d6e63e08566d436cd08a3a78f218283641bb53533948d4bcd5524c6a1f83613e20485cf7fa8d054da20dd9039d17e06c92cf282f25d4d4f57250
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.8.4":
   version: 7.26.9
   resolution: "@babel/runtime@npm:7.26.9"
@@ -5493,15 +5503,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@redwoodjs/auth-dbauth-web@npm:8.5.0":
-  version: 8.5.0
-  resolution: "@redwoodjs/auth-dbauth-web@npm:8.5.0"
+"@redwoodjs/auth-dbauth-web@npm:8.6.0":
+  version: 8.6.0
+  resolution: "@redwoodjs/auth-dbauth-web@npm:8.6.0"
   dependencies:
-    "@babel/runtime-corejs3": "npm:7.25.7"
-    "@redwoodjs/auth": "npm:8.5.0"
+    "@babel/runtime-corejs3": "npm:7.26.10"
+    "@redwoodjs/auth": "npm:8.6.0"
     "@simplewebauthn/browser": "npm:7.4.0"
     core-js: "npm:3.38.1"
-  checksum: 10c0/5b014720092fea224a302085619a44b1a772fed9b780b952462d40f0bcba8d419800c9c6072ad97dc191601d47ba1d692a3d6951616b5e6fb5c48191c8c7009f
+  checksum: 10c0/1a5190443ea9d8240e298a37b6a7ed8b33e2576f2b1a8c8d99056f9acd6a6b0928164416431a8aacd6074ac065239546c65529f2e0d0f7b9daafd87fa6274932
   languageName: node
   linkType: hard
 
@@ -5512,6 +5522,16 @@ __metadata:
     core-js: "npm:3.38.1"
     react: "npm:18.3.1"
   checksum: 10c0/bf71cd6a10efdcd74f5c8284730939bbfd063aef134415b669e8242a76425c8746daedf0f16f477be68c78c058be8365eb7612e7992573faf847f135121882d1
+  languageName: node
+  linkType: hard
+
+"@redwoodjs/auth@npm:8.6.0":
+  version: 8.6.0
+  resolution: "@redwoodjs/auth@npm:8.6.0"
+  dependencies:
+    core-js: "npm:3.38.1"
+    react: "npm:18.3.1"
+  checksum: 10c0/6c8dbab60bde07c65223fd6b0c56f7a48f3c9bc7b12687073c08aded4a8e371da18d74a6a8126f5c24d57522055a75c9368cf3987759ffcc91c791ebcf8b5402
   languageName: node
   linkType: hard
 
@@ -21995,7 +22015,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web@workspace:web"
   dependencies:
-    "@redwoodjs/auth-dbauth-web": "npm:8.5.0"
+    "@redwoodjs/auth-dbauth-web": "npm:8.6.0"
     "@redwoodjs/forms": "npm:8.5.0"
     "@redwoodjs/router": "npm:8.5.0"
     "@redwoodjs/vite": "npm:8.5.0"
