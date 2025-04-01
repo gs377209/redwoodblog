@@ -5764,16 +5764,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@redwoodjs/forms@npm:8.5.0":
-  version: 8.5.0
-  resolution: "@redwoodjs/forms@npm:8.5.0"
+"@redwoodjs/forms@npm:8.6.0":
+  version: 8.6.0
+  resolution: "@redwoodjs/forms@npm:8.6.0"
   dependencies:
     graphql: "npm:16.9.0"
     pascalcase: "npm:1.0.0"
     react-hook-form: "npm:7.54.2"
   peerDependencies:
     react: 18.3.1
-  checksum: 10c0/b5aadb21d42cc7315253f1b517923920d4bce579d6cdd4009a5e14c08eefedfbbf4c47eb6bb0c515721004ad2a693f15f39f173f3785aece1c5da7f311027528
+  checksum: 10c0/3fa82c87a964c3102449e51ce38f8e5c82001b9a5ad268a8b19459725add69d657bd4aa362383dd1b0caf95a33a931f54ac9ae6241d304bf0a43b87e7ff30fda
   languageName: node
   linkType: hard
 
@@ -21996,7 +21996,7 @@ __metadata:
   resolution: "web@workspace:web"
   dependencies:
     "@redwoodjs/auth-dbauth-web": "npm:8.5.0"
-    "@redwoodjs/forms": "npm:8.5.0"
+    "@redwoodjs/forms": "npm:8.6.0"
     "@redwoodjs/router": "npm:8.5.0"
     "@redwoodjs/vite": "npm:8.5.0"
     "@redwoodjs/web": "npm:8.5.0"
