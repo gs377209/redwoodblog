@@ -1,0 +1,3 @@
+releases:
+  api: patch
+  web: patch
