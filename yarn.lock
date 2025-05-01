@@ -7785,13 +7785,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prop-types@npm:*":
-  version: 15.7.14
-  resolution: "@types/prop-types@npm:15.7.14"
-  checksum: 10c0/1ec775160bfab90b67a782d735952158c7e702ca4502968aa82565bd8e452c2de8601c8dfe349733073c31179116cf7340710160d3836aa8a1ef76d1532893b1
-  languageName: node
-  linkType: hard
-
 "@types/qs@npm:*, @types/qs@npm:^6.9.5":
   version: 6.9.18
   resolution: "@types/qs@npm:6.9.18"
@@ -7824,13 +7817,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.3.20":
-  version: 18.3.20
-  resolution: "@types/react@npm:18.3.20"
+"@types/react@npm:^19.1.2":
+  version: 19.1.2
+  resolution: "@types/react@npm:19.1.2"
   dependencies:
-    "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/65fa867c91357e4c4c646945c8b99044360f8973cb7f928ec4de115fe3207827985d45be236e6fd6c092b09f631c2126ce835c137be30718419e143d73300d8f
+  checksum: 10c0/76ffe71395c713d4adc3c759465012d3c956db00af35ab7c6d0d91bd07b274b7ce69caa0478c0760311587bd1e38c78ffc9688ebc629f2b266682a19d8750947
   languageName: node
   linkType: hard
 
@@ -18637,6 +18629,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react@npm:19.1.0":
+  version: 19.1.0
+  resolution: "react@npm:19.1.0"
+  checksum: 10c0/530fb9a62237d54137a13d2cfb67a7db6a2156faed43eecc423f4713d9b20c6f2728b026b45e28fcd72e8eadb9e9ed4b089e99f5e295d2f0ad3134251bdd3698
+  languageName: node
+  linkType: hard
+
 "read-cache@npm:^1.0.0":
   version: 1.0.0
   resolution: "read-cache@npm:1.0.0"
@@ -21912,13 +21911,13 @@ __metadata:
     "@redwoodjs/router": "npm:8.6.1"
     "@redwoodjs/vite": "npm:8.6.1"
     "@redwoodjs/web": "npm:8.6.1"
-    "@types/react": "npm:^18.3.20"
+    "@types/react": "npm:^19.1.2"
     "@types/react-dom": "npm:^18.3.6"
     autoprefixer: "npm:^10.4.21"
     humanize-string: "npm:2.1.0"
     postcss: "npm:^8.5.3"
     postcss-loader: "npm:^8.1.1"
-    react: "npm:18.3.1"
+    react: "npm:19.1.0"
     react-dom: "npm:18.3.1"
     tailwindcss: "npm:^3.4.17"
   languageName: unknown
